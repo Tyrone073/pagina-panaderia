@@ -1,0 +1,318 @@
+body{
+    background-color: #e6cd44;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+   /* padding: 10px 0;*/
+   background-color: #613a07;
+}
+
+.caja{
+   /* font-family: 'Raleway', sans-serif; */
+    width: 940px; 
+    position: relative;
+    margin: 0 auto;
+   /* padding: 50px ;*/
+  /*  background-color: #613a07;*/
+}
+
+.logo{
+    width: 20%;
+    padding-left: 10px;
+   /* padding: auto; */
+   /* margin: auto; */
+    /* float: left; */
+}
+
+
+nav{
+    position: absolute;
+    top: 70%;
+    right: 30px;
+}
+
+nav li{
+    display: inline; /*transformo el defecto de lista a una linea */
+    margin: 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #ffdeb3;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+nav a:active{
+    color: rgb(168, 156, 43);
+
+}
+
+.producto{
+   /* width: 940px;
+    margin: o auto; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);  /* Define una cuadrícula de 3 columnas de 300px de ancho para los cuadros de las listas */
+    max-width: 940px;
+    margin: 0 auto;
+   /* justify-content: center;  /* Centra horizontalmente los elementos de la lista */
+   /* top: 20px; */
+}
+
+.producto li{
+    background-color: aliceblue;
+   /* display: inline-block;
+    margin: 0 1.5%; */ 
+    text-align: center;
+  /*  width: 30%; */
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #756509;
+    border-radius: 30px ;
+}
+
+.producto li:hover{
+    border-color: #ffffff;
+}
+
+.producto li:active{
+    border-color: rgb(104, 42, 7);
+}
+
+.producto h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto img{
+    width: 100%; /* el tamaño de la imagen ocupa todo el cuadro */
+    margin: auto; /* centra la imagen en el cuadro */
+}
+
+.descripcion{
+    font-size: 18px;
+}
+
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+   /* position: fixed;*/ /*para q se posicione abajo*/
+    bottom: 0;
+    width: 100%;  /* Ocupa todo el ancho de la pantalla */
+    background-image: url(imagen/12-.png);
+    background-size: 12%; /* para hacer la imagen citada con el url mas pequeña o grande*/
+    /* background-size: contain; */ /* para hacer q la imagen sea completa */
+   /* opacity: 0.83;*/
+   /* background-color: #613a07;*/
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+footer img{
+    width: 7%;
+    background-color: #613a07;
+    border-radius: 100px;
+}
+
+footer h3{
+    font-size: 13px;
+    color: #ffffff;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{/*para no repetir de nuevo el codigo le puedo decir con una coma q tambien lo haga en el legend*/
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input padre {
+display: block;
+margin-bottom: 20px;
+padding: 10px 25px;
+width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0; /*en estos datos el primer unumero suempre va a ser arriba y abajo y el otro lo de alados*/
+}
+
+/* el css siempre va a estoger en este orden: modificar en el html, id, Class y etiqueta (ejemp. <p>), de la cual en etiqueta va a escojer el que tenga el mayor numero de etiqueta pero me refiero a aquella misma cosa q deseemos modificar y haci con las demas cosas si se acompañan entre si */
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #613a07;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;/* para que la trancicion del hover se demore 1 segundo en cambiar el color */
+    cursor: pointer;/* para que la flecha se cambie con la manito */
+}
+.enviar:hover{
+    background-color: #b66c0b;
+    transform: scale(1.1);/* para que se haga mas grande el cuadro*/
+}
+table{
+    background-color: #ffffff;
+    margin: 40px 40px;
+}
+
+thead{
+    background-color: #b66c0b;
+    color: #ffffff;
+    font-weight: bold ;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 5px 40px;
+}
+
+/*css para el home*/
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;/* em es para multiplicar el tamaño predeterminado del navegador */
+    margin: 0 0 1em;
+}
+
+/*.titulo-principal::first-letter{ para seleccriona la primera letra
+    font-weight: bold;
+}*/
+
+.principal{
+    background-color: #fff456;
+    padding: 3em 0;
+    width: auto;
+    margin: 0 auto;
+}
+
+.contenido-principal{   
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto; 
+}
+
+.principal p /* si lo pongo + img seleccionara el primer p */{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.imagen-cocinero{
+    width: 120px;
+    float: left; /* para q se mueva a la izquierda y los demas elementos lo rodeen, float es mover o flotar */
+    margin: 0 20px 20px 0; /* arriba, derecha, abajo, izquierda */
+    /*margin-right: 20px;*/
+}
+
+
+.mapa{
+    background: linear-gradient(#fff456,#b6a234); /*el linear... no funciona con el background color y sirve para hacer el degradado de color, tambien se puede ponerle un grado (deg) al inicio de los colores para q se hagan vertical y el color le puedes poner cuanto quieres q ocupe on % o px */
+    padding: 3em 0; /* 3 em arriba y abajo y 0 a loa lados*/
+}
+
+.mapa p {
+    margin: 0 0 2em;/* 0 arriba 0 a los lados y 2 abajo*/
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    background-color: #b6a234;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;/* es para q lea en linea en la forma q esta el html */
+    vertical-align: top; /* para q se balla en la parete de arriba */
+}
+
+.items{
+    line-height: 1.5;/* para darle espacio en la linea de las listas*/
+}
+
+.items::before{
+    content: "★";
+}
+
+.items:first-child{/* para q escoja el primer elemento o el end child para el ultimo y tambien el nth-child(){} para decirle a que elemento escoger, esto es pseudo-clases*/
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;/* es ancho */
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px black; /* primer parametro lado derecho,abajo,para arriba y el otro lado se pone - ,el 30 de la difuminacion,15 de q tanto abarque la sombra es como el ancho */
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    background-color: #613a07;
+    width: 560px;
+    margin: 1em auto;/* tambien el auto se utiliza para centrar */
+}
+
+@media screen and (max-width:480px){ /*para hacer q cuando se vea en telefono o cambie de tamaño la pantalla se adapte bie */
+
+    .logo{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja,.contenido-principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}

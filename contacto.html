@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Descripción del sitio web">
+        <title>CONTACTO</title> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <img src="imagen/logo.png" class="logo">
+                <nav >
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav> 
+            </div>             
+
+    </header>
+
+        <main>
+
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label> <!-- el for es para que se conente con el id del input, lo q hace es q si preciono las letras Nombre y ... me dirige al input osea al cuadro-->
+                <input type="text" id="nombreapellido" class="input-padre" required><!--el required es para q el cuadro sea obligatorio de rellenar-->
+
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="email" id="correoelectronico" class="input-padre" required placeholder="email@dominio.com"> <!-- el type ="email" es para decirle q sea tipo email y q salga en el teclado el @ y sirve pa a telefono, y para pc nomas se puede quedae en text-->
+
+                <label for="telefono">Telèfono</label>
+                <input type="number" id="telefono" class="input-padre" required placeholder="(xx)xxxx xxxx"><!--para q salga el teclado en numero--> <!-- el placeholder es para decirle al cuadro de texto(en este caso es number) que tenga un texto de ejemplo el cual desaparece al rellenarlo-->
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input padre" required></textarea>
+
+                <fieldset><!--el fieldset es para decir q todo esto pertenece al mismo grupo pero separado, es como si utilizaramos el div pero este no dice q estamos hablando del mismo grupo, ademas q el fieldset no puede llevar un parrafo(<p>) -->
+                    <legend>¿Cómo le gustaria que lo contactaramos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> <!-- el name:"" es para que todos sean dl mismo grupo y se puede seleccionar solo uno-->Email</label>
+                    
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Que horario lo va a retirar?</legend>
+                    <select>
+                        <option>Mañana(05h00-10h00 am.)</option>
+                        <option>Tarde(14h00-17h00 pm.)</option>
+                        <option>Noche(18h00-20h00 pm.</option>
+                    </select> <!-- para crear una pregunta con su cuadro de seleccionar -->
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria resivir novedades de la panaderia?</label><!--el checked es para dejar marcado pod default cualquier casilla a la q le pusistes pero el usuario si lo puede desmarcar-->
+
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+
+            </form>
+
+            <table>
+
+                <thead>
+                    <tr><!-- el tr es para crear filas-->
+                        <th>Dia</th><!-- t de tabla y h de titulo-->
+                        <th>Horario</th>
+                    </tr>                   
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>05h-10h 14h-20h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Martes</td>
+                        <td>05h-20h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>05h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>05h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>05h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td>05h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>05h-10h</td>
+                    </tr>                   
+                </tbody>
+                
+            </table>
+           
+        </main>
+
+        <footer>
+            <img src="imagen/footer-removebg-preview.png" alt="Logo de la panaderia">
+            <h3>&copy copiryght</h3>
+        </footer>
+
+    </body>
+
+</html>
