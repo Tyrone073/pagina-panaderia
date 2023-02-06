@@ -171,10 +171,12 @@ width: 50%;
     transition: 0.5s all;/* para que la trancicion del hover se demore 1 segundo en cambiar el color */
     cursor: pointer;/* para que la flecha se cambie con la manito */
 }
+
 .enviar:hover{
     background-color: #b66c0b;
     transform: scale(1.1);/* para que se haga mas grande el cuadro*/
 }
+
 table{
     background-color: #ffffff;
     margin: 40px 40px;
@@ -304,6 +306,10 @@ td, th{
         text-align: center;
     }
 
+    body{
+        font-size: 5px;
+    }
+
     nav{
         position: static;
     }
@@ -315,4 +321,28 @@ td, th{
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
     }
+
+    .producto{
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 0;
+    }
+
+    form{
+        margin: 0 1rem 0;
+    }
+
+    textarea{
+        width: 95%;
+    }
+
+    .enviar{
+       margin-left: 29%;
+       background-color: #eedb6f;
+    }
+
+    table{
+        margin: 10px auto;
+    }
+
 }
